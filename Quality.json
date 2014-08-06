@@ -1,0 +1,28 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/Quality.json",
+	"title":"Quality",
+	"description":"Provides an indication of the reliability of the parent component value in the form of a decimal number (ex: relative accuracy), a range (ex: bidirectional tolerance), a categorical value (ex: good, bad) or plain textual statement",
+	"type":"object",
+	"properties":{
+				"byQuantity":{
+					"title":"byQuantity",
+					"type":"http://shapechange.net/tmp/ows9/json/measure.json"
+				},
+				"byQuantityRange":{
+					"title":"byQuantityRange",
+					"type":"string",
+					"format":"uri"
+				},
+				"byCategory":{
+					"title":"byCategory",
+					"type":"string",
+					"format":"uri"
+				},
+				"byText":{
+					"title":"byText",
+					"type":"string",
+					"format":"uri"
+				}
+	}
+}

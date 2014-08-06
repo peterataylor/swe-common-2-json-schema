@@ -1,0 +1,36 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/Boolean.json",
+	"title":"Boolean",
+	"description":"Scalar component used to express truth: True or False, 0 or 1",
+	"type":"object",
+	"properties":{
+				"referenceFrame":{
+					"title":"referenceFrame",
+					"description":"Frame of reference (usually temporal or spatial) with respect to which the value of the component is expressed. A reference frame anchors a value to a real world datum.",
+					"type":"any"
+				},
+				"axisID":{
+					"title":"axisID",
+					"description":"Specifies the reference axis (refer to gml:axisID). The reference frame URI should also be specified unless it is inherited from parent Vector",
+					"type":"any"
+				},
+				"quality":{
+					"title":"quality",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/Quality.json"
+					}
+				},
+				"nilValues":{
+					"title":"nilValues",
+					"type":"string",
+					"format":"uri"
+				},
+				"value":{
+					"title":"value",
+					"description":"Value is optional, to enable structure to act as a schema for values provided using other encodings",
+					"type":"any"
+				}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/NilValues.json",
+	"title":"NilValues",
+	"type":"object",
+	"properties":{
+				"nilValue":{
+					"title":"nilValue",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/NilValue.json"
+					}
+				}
+	}
+}

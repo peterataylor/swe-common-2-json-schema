@@ -1,0 +1,40 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/Component.json",
+	"title":"Component",
+	"description":"Binary encoding parameters used for encoding a single data component",
+	"type":"object",
+	"properties":{
+				"ref":{
+					"title":"ref",
+					"description":"Reference to the data component that these binary encoding settings apply to",
+					"type":"any",
+					"required":true
+				},
+				"dataType":{
+					"title":"dataType",
+					"description":"Binary data type used to encode the value(s) of the referenced data component",
+					"type":"any",
+					"required":true
+				},
+				"byteLength":{
+					"title":"byteLength",
+					"description":"Byte length of this field when a custom data type is used",
+					"type":"any"
+				},
+				"bitLength":{
+					"title":"bitLength",
+					"type":"any"
+				},
+				"significantBits":{
+					"title":"significantBits",
+					"description":"Number of significant bits actually used for a binary encoded numerical value (all remaining bits shall be set to 0)",
+					"type":"any"
+				},
+				"encryption":{
+					"title":"encryption",
+					"description":"Name of the encryption method used to encrypt the value of this field",
+					"type":"any"
+				}
+	}
+}

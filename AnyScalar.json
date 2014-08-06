@@ -1,0 +1,37 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AnyScalar.json",
+	"title":"AnyScalar",
+	"description":"Re-usable group providing a choice of scalar data components",
+	"type":"object",
+	"properties":{
+				"byBoolean":{
+					"title":"byBoolean",
+					"type":"boolean"
+				},
+				"byCount":{
+					"title":"byCount",
+					"type":"string",
+					"format":"uri"
+				},
+				"byQuantity":{
+					"title":"byQuantity",
+					"type":"http://shapechange.net/tmp/ows9/json/measure.json"
+				},
+				"byTime":{
+					"title":"byTime",
+					"type":"string",
+					"format":"time"
+				},
+				"byCategory":{
+					"title":"byCategory",
+					"type":"string",
+					"format":"uri"
+				},
+				"byText":{
+					"title":"byText",
+					"type":"string",
+					"format":"uri"
+				}
+	}
+}

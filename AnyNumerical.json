@@ -1,0 +1,23 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AnyNumerical.json",
+	"title":"AnyNumerical",
+	"description":"Re-usable group providing a choice of numeric data components",
+	"type":"object",
+	"properties":{
+				"byCount":{
+					"title":"byCount",
+					"type":"string",
+					"format":"uri"
+				},
+				"byQuantity":{
+					"title":"byQuantity",
+					"type":"http://shapechange.net/tmp/ows9/json/measure.json"
+				},
+				"byTime":{
+					"title":"byTime",
+					"type":"string",
+					"format":"time"
+				}
+	}
+}

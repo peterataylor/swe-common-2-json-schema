@@ -1,0 +1,18 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/ComponentOrBlock.json",
+	"title":"ComponentOrBlock",
+	"type":"object",
+	"properties":{
+				"byComponent":{
+					"title":"byComponent",
+					"type":"string",
+					"format":"uri"
+				},
+				"byBlock":{
+					"title":"byBlock",
+					"type":"string",
+					"format":"uri"
+				}
+	}
+}

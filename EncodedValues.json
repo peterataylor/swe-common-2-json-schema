@@ -1,0 +1,9 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/EncodedValues.json",
+	"title":"EncodedValues",
+	"type":"object",
+	"properties":{
+
+	}
+}

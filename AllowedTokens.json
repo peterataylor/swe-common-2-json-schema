@@ -1,0 +1,20 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AllowedTokens.json",
+	"title":"AllowedTokens",
+	"description":"Defines permitted values for the component, as an enumerated list of tokens or a regular expression pattern",
+	"type":"object",
+	"properties":{
+				"value":{
+					"title":"value",
+					"type":"array",
+					"items":{
+						"type":"any"
+					}
+				},
+				"pattern":{
+					"title":"pattern",
+					"type":"any"
+				}
+	}
+}

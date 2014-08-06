@@ -1,0 +1,36 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/BinaryEncoding.json",
+	"title":"BinaryEncoding",
+	"description":"Parameters of the binary encoding method",
+	"type":"object",
+	"properties":{
+				"byteLength":{
+					"title":"byteLength",
+					"description":"Total length in bytes of the binary stream (if known in advance)",
+					"type":"any"
+				},
+				"byteEncoding":{
+					"title":"byteEncoding",
+					"description":"Byte encoding method used to encode the binary data (raw or base 64)",
+					"type":"string",
+					"enum":["base64","raw"],
+					"required":true
+				},
+				"byteOrder":{
+					"title":"byteOrder",
+					"description":"Byte order convention used to encode this binary data (big  endian = most significant byte first, MSB or little endian = least significant byte first, LSB)",
+					"type":"string",
+					"enum":["bigEndian","littleEndian"],
+					"required":true
+				},
+				"member":{
+					"title":"member",
+					"description":"Each member contains detailed parameters for encoding a scalar value or a block of values",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/ComponentOrBlock.json"
+					}
+				}
+	}
+}

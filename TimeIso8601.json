@@ -1,0 +1,24 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/TimeIso8601.json",
+	"title":"TimeIso8601",
+	"type":"object",
+	"properties":{
+				"byDate":{
+					"title":"byDate",
+					"type":"any"
+				},
+				"byTime":{
+					"title":"byTime",
+					"type":"any"
+				},
+				"byDateTime":{
+					"title":"byDateTime",
+					"type":"any"
+				},
+				"byIndeterminateValue":{
+					"title":"byIndeterminateValue",
+					"type":"any"
+				}
+	}
+}

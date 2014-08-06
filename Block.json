@@ -1,0 +1,40 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/Block.json",
+	"title":"Block",
+	"description":"Binary encoding parameters used to encode a block of values at once. This is used for encrypting or compressing a complete array of values for instance",
+	"type":"object",
+	"properties":{
+				"ref":{
+					"title":"ref",
+					"description":"Reference to the aggregate data component that this binary block encoding settings apply to",
+					"type":"any",
+					"required":true
+				},
+				"byteLength":{
+					"title":"byteLength",
+					"description":"Length in byte of this binary block (if known in advance)",
+					"type":"any"
+				},
+				"paddingBytes-before":{
+					"title":"paddingBytes-before",
+					"description":"Number of padding bytes present in the stream before this binary block",
+					"type":"any"
+				},
+				"paddingBytes-after":{
+					"title":"paddingBytes-after",
+					"description":"Number of padding bytes present in the stream after this binary block",
+					"type":"any"
+				},
+				"encryption":{
+					"title":"encryption",
+					"description":"Name of the encryption method used to encrypt the block of values described by the referenced data component",
+					"type":"any"
+				},
+				"compression":{
+					"title":"compression",
+					"description":"Name of the compression method used to encrypt the block of values described by the referenced data component",
+					"type":"any"
+				}
+	}
+}

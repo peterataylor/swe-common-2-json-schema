@@ -1,0 +1,17 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AbstractSWE.json",
+	"title":"AbstractSWE",
+	"description":"Base substitution groups for all SWE Common objects other than value objects",
+	"type":"object",
+	"properties":{
+				"extension":{
+					"title":"extension",
+					"description":"Extension slot for future extensions to this standard.",
+					"type":"array",
+					"items":{
+						"type":"any"
+					}
+				}
+	}
+}

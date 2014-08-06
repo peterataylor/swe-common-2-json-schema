@@ -1,0 +1,16 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/TimePosition.json",
+	"title":"TimePosition",
+	"type":"object",
+	"properties":{
+				"byReal":{
+					"title":"byReal",
+					"type":"any"
+				},
+				"byTimeIso8601":{
+					"title":"byTimeIso8601",
+					"$ref":"FIXME/swe/TimeIso8601.json"
+				}
+	}
+}

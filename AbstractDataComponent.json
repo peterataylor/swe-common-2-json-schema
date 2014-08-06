@@ -1,0 +1,39 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AbstractDataComponent.json",
+	"title":"AbstractDataComponent",
+	"description":"Abstract base class for all data components",
+	"type":"object",
+	"properties":{
+				"identifier":{
+					"title":"identifier",
+					"description":"Unique identifier of the data component. It can be used to globally identify a particular component of the dataset, a process input/output or a universal constant",
+					"type":"any"
+				},
+				"label":{
+					"title":"label",
+					"description":"Textual label for the data component . This is often used for displaying a human readable name for a dataset field or a process input/output",
+					"type":"any"
+				},
+				"description":{
+					"title":"description",
+					"description":"Textual description (i.e. human readable) of the data component usually used to clarify its nature",
+					"type":"any"
+				},
+				"definition":{
+					"title":"definition",
+					"description":"Reference to semantic information defining the precise nature of the component",
+					"type":"any"
+				},
+				"optional":{
+					"title":"optional",
+					"description":"Specifies that data for this component can be omitted in the datastream",
+					"type":"boolean"
+				},
+				"updatable":{
+					"title":"updatable",
+					"description":"Specifies if the value of a data component can be updated externally (i.e. is variable)",
+					"type":"any"
+				}
+	}
+}

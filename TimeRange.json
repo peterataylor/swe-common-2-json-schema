@@ -1,0 +1,57 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/TimeRange.json",
+	"title":"TimeRange",
+	"description":"Time value pair for specifying a time range (can be a decimal or ISO 8601)",
+	"type":"object",
+	"properties":{
+				"referenceFrame":{
+					"title":"referenceFrame",
+					"description":"Frame of reference (usually temporal or spatial) with respect to which the value of the component is expressed. A reference frame anchors a value to a real world datum.",
+					"type":"any"
+				},
+				"axisID":{
+					"title":"axisID",
+					"description":"Specifies the reference axis (refer to gml:axisID). The reference frame URI should also be specified unless it is inherited from parent Vector",
+					"type":"any"
+				},
+				"quality":{
+					"title":"quality",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/Quality.json"
+					}
+				},
+				"nilValues":{
+					"title":"nilValues",
+					"type":"string",
+					"format":"uri"
+				},
+				"referenceTime":{
+					"title":"referenceTime",
+					"description":"Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame)",
+					"type":"any"
+				},
+				"localFrame":{
+					"title":"localFrame",
+					"description":"Temporal frame of reference whose origin is located by the value of this component",
+					"type":"any"
+				},
+				"uom":{
+					"title":"uom",
+					"description":"Temporal unit of measure used to express the value of this data component",
+					"type":"any",
+					"required":true
+				},
+				"constraint":{
+					"title":"constraint",
+					"type":"string",
+					"format":"uri"
+				},
+				"value":{
+					"title":"value",
+					"description":"Value is a pair of time values expressed in ISO-8601 or as decimal numbers separated by a space. It is optional, to enable structure to act as a schema for values provided using other encodings",
+					"$ref":"FIXME/swe/TimePair.json"
+				}
+	}
+}

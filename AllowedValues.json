@@ -1,0 +1,27 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AllowedValues.json",
+	"title":"AllowedValues",
+	"description":"Defines the permitted values for the component as an enumerated list and/or a list of inclusive ranges",
+	"type":"object",
+	"properties":{
+				"value":{
+					"title":"value",
+					"type":"array",
+					"items":{
+						"type":"any"
+					}
+				},
+				"interval":{
+					"title":"interval",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/RealPair.json"
+					}
+				},
+				"significantFigures":{
+					"title":"significantFigures",
+					"type":"any"
+				}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/UnitReference.json",
+	"title":"UnitReference",
+	"type":"object",
+	"properties":{
+				"uom":{
+					"title":"uom",
+					"type":"any",
+					"required":true
+				}
+	}
+}

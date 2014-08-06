@@ -1,0 +1,46 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/CategoryRange.json",
+	"title":"CategoryRange",
+	"description":"Pair of categorical values used to specify a range in an ordinal reference system (specified by the code space)",
+	"type":"object",
+	"properties":{
+				"referenceFrame":{
+					"title":"referenceFrame",
+					"description":"Frame of reference (usually temporal or spatial) with respect to which the value of the component is expressed. A reference frame anchors a value to a real world datum.",
+					"type":"any"
+				},
+				"axisID":{
+					"title":"axisID",
+					"description":"Specifies the reference axis (refer to gml:axisID). The reference frame URI should also be specified unless it is inherited from parent Vector",
+					"type":"any"
+				},
+				"quality":{
+					"title":"quality",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/Quality.json"
+					}
+				},
+				"nilValues":{
+					"title":"nilValues",
+					"type":"string",
+					"format":"uri"
+				},
+				"codeSpace":{
+					"title":"codeSpace",
+					"description":"Name of the dictionary defining an ordered set of values with respect to which the range is expressed (ordinal reference system)",
+					"type":"any"
+				},
+				"constraint":{
+					"title":"constraint",
+					"type":"string",
+					"format":"uri"
+				},
+				"value":{
+					"title":"value",
+					"description":"Value is a pair of tokens separated by a space (if tokens contain spaces, they must be espaced by using XML entities). It is optional, to enable structure to act as a schema for values provided using other encodings",
+					"$ref":"FIXME/swe/TokenPair.json"
+				}
+	}
+}

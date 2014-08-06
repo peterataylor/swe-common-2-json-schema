@@ -1,0 +1,31 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/TextEncoding.json",
+	"title":"TextEncoding",
+	"description":"Parameters of the text encoding method",
+	"type":"object",
+	"properties":{
+				"tokenSeparator":{
+					"title":"tokenSeparator",
+					"description":"Character sequence used as the token separator (i.e. between two successive values)",
+					"type":"any",
+					"required":true
+				},
+				"blockSeparator":{
+					"title":"blockSeparator",
+					"description":"Character sequence used as the block separator (i.e. between two successive blocks in the data set. The end of a block is reached once all values from the data tree have been encoded once)",
+					"type":"any",
+					"required":true
+				},
+				"decimalSeparator":{
+					"title":"decimalSeparator",
+					"description":"Character used as the decimal separator",
+					"type":"any"
+				},
+				"collapseWhiteSpaces":{
+					"title":"collapseWhiteSpaces",
+					"description":"Indicates whether white spaces (i.e. space, tab, CR, LF) should be collapsed with separators when parsing the data stream",
+					"type":"any"
+				}
+	}
+}

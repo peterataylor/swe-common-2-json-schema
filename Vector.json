@@ -1,0 +1,43 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/Vector.json",
+	"title":"Vector",
+	"description":"Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.",
+	"type":"object",
+	"properties":{
+				"definition":{
+					"title":"definition",
+					"description":"Reference to semantic information defining the precise nature of the component",
+					"type":"any"
+				},
+				"optional":{
+					"title":"optional",
+					"description":"Specifies that data for this component can be omitted in the datastream",
+					"type":"boolean"
+				},
+				"updatable":{
+					"title":"updatable",
+					"description":"Specifies if the value of a data component can be updated externally (i.e. is variable)",
+					"type":"any"
+				},
+				"referenceFrame":{
+					"title":"referenceFrame",
+					"description":"Frame of reference (usually spatial) with respect to which the coordinates of this vector are expressed. A reference frame anchors a vector value to a real world datum.",
+					"type":"any",
+					"required":true
+				},
+				"localFrame":{
+					"title":"localFrame",
+					"description":"Frame of reference whose origin is located by the coordinates of this vector",
+					"type":"any"
+				},
+				"coordinate":{
+					"title":"coordinate",
+					"description":"Definition of the coordinate provided as a data component with a numerical representation",
+					"type":"array",
+					"items":{
+						"$ref":"FIXME/swe/AnyNumerical.json"
+					}
+				}
+	}
+}

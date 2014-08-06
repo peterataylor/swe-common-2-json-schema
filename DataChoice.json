@@ -1,0 +1,39 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/DataChoice.json",
+	"title":"DataChoice",
+	"description":"Implementation of a choice of two or more Data Components (also called disjoint union)",
+	"type":"object",
+	"properties":{
+				"definition":{
+					"title":"definition",
+					"description":"Reference to semantic information defining the precise nature of the component",
+					"type":"any"
+				},
+				"optional":{
+					"title":"optional",
+					"description":"Specifies that data for this component can be omitted in the datastream",
+					"type":"boolean"
+				},
+				"updatable":{
+					"title":"updatable",
+					"description":"Specifies if the value of a data component can be updated externally (i.e. is variable)",
+					"type":"any"
+				},
+				"choiceValue":{
+					"title":"choiceValue",
+					"description":"This category component marks the data stream element that will indicate the actual choice made. Possible choices are listed in the Category constraint section as an enumeration and should map to item names.",
+					"type":"string",
+					"format":"uri"
+				},
+				"item":{
+					"title":"item",
+					"type":"array",
+					"items":{
+						"type":"string",
+						"format":"uri",
+						"minItems":"2"
+					}
+				}
+	}
+}

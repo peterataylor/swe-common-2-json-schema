@@ -1,0 +1,10 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/XMLEncoding.json",
+	"title":"XMLEncoding",
+	"description":"Parameters of the XML encoding method",
+	"type":"object",
+	"properties":{
+
+	}
+}

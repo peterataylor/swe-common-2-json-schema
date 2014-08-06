@@ -1,0 +1,16 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/IntegerPair.json",
+	"title":"IntegerPair",
+	"type":"object",
+	"properties":{
+				"item":{
+					"title":"item",
+					"type":"array",
+					"items":{
+						"type":"any",
+						"minItems":"2"
+					}
+				}
+	}
+}

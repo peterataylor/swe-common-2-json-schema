@@ -1,0 +1,29 @@
+{
+	"$schema":"http://json-schema.org/draft-03/schema#",
+	"id":"FIXME/swe/AnyRange.json",
+	"title":"AnyRange",
+	"description":"Re-usable group providing a choice of range data components",
+	"type":"object",
+	"properties":{
+				"byQuantityRange":{
+					"title":"byQuantityRange",
+					"type":"string",
+					"format":"uri"
+				},
+				"byTimeRange":{
+					"title":"byTimeRange",
+					"type":"string",
+					"format":"uri"
+				},
+				"byCountRange":{
+					"title":"byCountRange",
+					"type":"string",
+					"format":"uri"
+				},
+				"byCategoryRange":{
+					"title":"byCategoryRange",
+					"type":"string",
+					"format":"uri"
+				}
+	}
+}
